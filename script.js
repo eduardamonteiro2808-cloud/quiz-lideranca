@@ -95,6 +95,7 @@ const perguntas = [
 let atual = 0;
 
 let pontos = {
+
     "Decisiva": 0,
     "Comunicativa": 0,
     "Estratégica": 0,
@@ -106,28 +107,9 @@ const pergunta = document.getElementById("pergunta");
 const botaoA = document.getElementById("botaoA");
 const botaoB = document.getElementById("botaoB");
 const botaoC = document.getElementById("botaoC");
+const botaoD = document.getElementById("botaoD");
 
 const resultado = document.getElementById("resultado");
-
-function criarBotaoD(){
-
-    if(!document.getElementById("botaoD")){
-
-        const novoBotao = document.createElement("button");
-
-        novoBotao.id = "botaoD";
-
-        novoBotao.onclick = function(){
-            responder("D");
-        };
-
-        document.querySelector(".botoes").appendChild(novoBotao);
-    }
-}
-
-criarBotaoD();
-
-const botaoD = document.getElementById("botaoD");
 
 function mostrarPergunta(){
 
@@ -200,29 +182,29 @@ function mostrarResultado(){
     if(vencedor == "Decisiva"){
 
         resultado.innerHTML =
-        "<h2>Liderança Decisiva</h2>" +
+        "<h2>Maioria A — Liderança Decisiva</h2>" +
         "<p>Você tende a agir rapidamente diante dos desafios e assumir responsabilidades com facilidade. Líderes com esse perfil costumam ser firmes nas decisões e transmitem segurança para a equipe.</p>";
     }
 
     if(vencedor == "Comunicativa"){
 
         resultado.innerHTML =
-        "<h2>Liderança Comunicativa</h2>" +
+        "<h2>Maioria B — Liderança Comunicativa</h2>" +
         "<p>Você valoriza o diálogo, a escuta e a troca de ideias. Pessoas com esse perfil costumam criar ambientes mais colaborativos e relações de confiança dentro da equipe.</p>";
     }
 
     if(vencedor == "Estratégica"){
 
         resultado.innerHTML =
-        "<h2>Liderança Estratégica</h2>" +
-        "<p>Você gosta de organização, planejamento e resolução de problemas. Líderes estratégicos conseguem enxergar objetivos de longo prazo.</p>";
+        "<h2>Maioria C — Liderança Estratégica</h2>" +
+        "<p>Você gosta de organização, planejamento e resolução de problemas. Líderes estratégicos conseguem enxergar objetivos de longo prazo e distribuir tarefas de forma eficiente.</p>";
     }
 
     if(vencedor == "Empática"){
 
         resultado.innerHTML =
-        "<h2>Liderança Empática</h2>" +
-        "<p>Você prioriza as relações humanas e o bem-estar da equipe. Pessoas com esse perfil costumam oferecer apoio emocional e acolhimento.</p>";
+        "<h2>Maioria D — Liderança Empática</h2>" +
+        "<p>Você prioriza as relações humanas e o bem-estar da equipe. Pessoas com esse perfil costumam oferecer apoio emocional, acolhimento e criar ambientes mais saudáveis.</p>";
     }
 }
 
