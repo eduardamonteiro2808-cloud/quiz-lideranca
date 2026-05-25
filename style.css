@@ -1,6 +1,8 @@
 body{
     font-family: Arial, Helvetica, sans-serif;
+
     background: linear-gradient(135deg, #0f172a, #1e293b);
+
     color: white;
 
     display: flex;
@@ -8,13 +10,15 @@ body{
     align-items: center;
 
     height: 100vh;
+
     margin: 0;
 }
 
 .container{
+
     background: #1e293b;
 
-    width: 650px;
+    width: 700px;
 
     padding: 40px;
 
@@ -26,28 +30,32 @@ body{
 }
 
 h1{
-    margin-bottom: 10px;
-    font-size: 40px;
-}
 
-p{
     margin-bottom: 30px;
-    color: #cbd5e1;
+
+    font-size: 42px;
 }
 
 #pergunta{
+
     margin-bottom: 30px;
+
     font-size: 26px;
+
+    line-height: 1.5;
 }
 
 .botoes{
+
     display: flex;
+
     flex-direction: column;
 
     gap: 15px;
 }
 
 button{
+
     background: #3b82f6;
 
     color: white;
@@ -66,15 +74,17 @@ button{
 }
 
 button:hover{
+
     background: #2563eb;
 
     transform: scale(1.03);
 }
 
 #resultado{
+
     margin-top: 30px;
 
-    font-size: 30px;
+    font-size: 28px;
 
-    font-weight: bold;
+    line-height: 1.6;
 }
